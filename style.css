@@ -6,21 +6,20 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
+    background-image: linear-gradient(to bottom right, #647df9, #F2F7F2);
     background: #647df9;
 }
 .main{
-    margin: 2%;
-    background: green;
+    /*background: green;*/
+    width: 100%;
+    display: block;
 }
 h1{
     text-align: center;
     font-size: 48px;
     padding: 5px;
 }
-h2{
-   margin-left: 20px;
-}
-.sec1{
+/*.sec1{
     background: orange;
 }
 .sec2{
@@ -28,20 +27,22 @@ h2{
 }
 .sec4{
     background: chocolate;
-}
+}*/
 .wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    /*background-color: aliceblue;*/
 }
 .ticket{
-    width: 350px;
-    height: 400px;
+    width: 330px;
     border-radius: 7px;
-    margin: 10px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    margin: 30px;
+    padding-bottom: 2%;
 }
 .head{
+    padding-top: 2%;
     border-top-left-radius:3px;
     border-top-right-radius:3px;
 }
@@ -66,8 +67,7 @@ h2{
     font-size: 30px;
     font-weight: 500;
     border-bottom-left-radius:15px;
-    border-bottom-right-radius:15px; 
-    
+    border-bottom-right-radius:15px;  
 }
 .harga{
     display: flex;
@@ -79,7 +79,6 @@ h2{
     border-top-left-radius:3px;
     border-top-right-radius:3px;
 }
-
 #vip{
     background: #d0b3ff;
 }
@@ -103,16 +102,39 @@ h2{
     display: flex;
     justify-content: center;
 }
+.btn{
+    border: 1px solid pink ;
+    background-color:#ffd861;
+    border-radius: 7px;
+
+}
+
 ul{
     margin: 5%;
     list-style-type: none;
     display: block;
-    
 }
 .cek{
     float: right;
-    
 }
 li{
     margin-bottom: 20px;
+}
+@media (max-width: 1020px) {
+    .wrapper{
+        width: 60%;
+        margin: auto;
+    }
+}
+.sec4{
+    width: 60%;
+    margin: auto;
+}
+.medsos-logo{
+    margin: auto;
+    display: flex;
+}
+.logo{
+    width: 20%;
+    text-align: center;
 }
